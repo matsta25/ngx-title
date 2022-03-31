@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<!---
+BUILD lib
+  in ngx-title-workspace/projects/ngx-title run ng build ngx-title
+Publish lib
+  in ngx-title-workspace/dist/ngx-title run npm publis
+
+TODO:
+docs like - https://www.npmjs.com/package/ngx-bootstrap
+version 1.0.0 and post on reddit
+change worksprace to ngx-title
+-->
