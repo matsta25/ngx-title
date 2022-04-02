@@ -11,7 +11,7 @@
   <a href="https://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT badge"/></a>
 </p>
 
-Ngx-title is small library that can enhance your html title in Angular based web page.
+Ngx-title is small library that can enhance your html title in Angular based web page when the browser tab is not active.
 
 > If you are interested of contributing, go to [CONTRIBUTING](https://github.com/matsta25/ngx-title/blob/main/CONTRIBUTING.md) to make this project more awesome! :sunglasses:
 
@@ -19,17 +19,19 @@ Ngx-title is small library that can enhance your html title in Angular based web
 
 Demo for _sleepy_ type:
 
- <img src="https://raw.githubusercontent.com/matsta25/ngx-title/main/demo/sleepy.gif" width="490" height="43"  alt="demo"/> 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/matsta25/ngx-title/main/demo/sleepy.gif" width="490" height="43"  alt="demo"/> 
+</div>
 
 All types:
 
-| ngx-title type   | usage                                                                                   | text                |
-| ---------------- |-----------------------------------------------------------------------------------------| ------------------- |
-| _sleepy_       | ```typescript <ngx-title [type]="'sleepy'"></ngx-title>```                              | _(-,-)Zzzz..._    |
-| _come_back_    | ```typescript <ngx-title [type]="'come_back'"></ngx-title>```                           | _Come back!_      |
-| _waiting_      | ```typescript <ngx-title [type]="'waiting'"></ngx-title>```                             | _Waiting..._      |
-| _waiting_      | ```typescript <ngx-title [type]="'waiting'"></ngx-title>```                             | _HERE!_           |
-| _custom_       | ```typescript <ngx-title [type]="'custom'" [customText]="'Custom text!'"></ngx-title``` | _Custom text!_    |
+| type           | text                | usage                                                                                   |
+|----------------|---------------------|-----------------------------------------------------------------------------------------|
+| _sleepy_       | _(-,-)Zzzz..._      |```typescript <ngx-title [type]="'sleepy'"></ngx-title>```                             |
+| _come_back_    | _Come back!_        |```typescript <ngx-title [type]="'come_back'"></ngx-title>```                          |
+| _waiting_      | _Waiting..._        |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
+| _waiting_      | _HERE!_             |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
+| _custom_       | _Custom text!_      | ```typescript <ngx-title [type]="'custom'" [customText]="'Custom text!'"></ngx-title``` |      
 
 ## Installation
 
