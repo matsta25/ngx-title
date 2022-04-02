@@ -56,7 +56,7 @@ All types:
 | _sleepy_    | _(-,-)Zzzz..._      |```typescript <ngx-title [type]="'sleepy'"></ngx-title>```                             |
 | _come_back_ | _Come back!_        |```typescript <ngx-title [type]="'come_back'"></ngx-title>```                          |
 | _waiting_   | _Waiting..._        |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
-| _here_      | _HERE!_             |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
+| _here_      | _HERE!_             |```typescript <ngx-title [type]="'here'"></ngx-title>```                            |
 | _custom_    | _Custom text!_      | ```typescript <ngx-title [type]="'custom'" [customText]="'Custom text!'"></ngx-title``` |      
 
 ## Contributing
@@ -98,7 +98,7 @@ This project exists thanks to all these people :muscle: :
 
 Everything in this repository is [licensed under the MIT License][license] unless otherwise specified.
 
-Copyright (c) 2022 [Mateusz Stanczak]
+Copyright (c) 2022
 
 [license]: https://github.com/matsta25/ngx-title/blob/main/LICENSE
 [Mateusz Stanczak]: https://github.com/matsta25
