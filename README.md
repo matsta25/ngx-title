@@ -15,9 +15,15 @@ Ngx-title is small library that can enhance your html title in Angular based web
 
 > If you are interested of contributing, go to [CONTRIBUTING](https://github.com/matsta25/angular-starter-app/blob/master/CONTRIBUTING.md) to make this project more awesome! :sunglasses:
 
-## Demo
+## Demo & Types
 
-
+| ngx-title type | usage                                                   | effect                                                                                                                        |
+|----------------|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| _sleepy_         | ```typescript <ngx-title [type]="'sleepy'"></ngx-title>``` | <img src="https://raw.githubusercontent.com/matsta25/ngx-title/main/demo/sleepy.svg?sanitize=true" width="490" height="43" /> |
+| _come_back_         | ```typescript <ngx-title [type]="'come_back'"></ngx-title>``` |                                                                                                                               |
+| _waiting_         | ```typescript <ngx-title [type]="'waiting'"></ngx-title>``` |                                                                                                                               |
+| _waiting_         | ```typescript <ngx-title [type]="'waiting'"></ngx-title>``` |                                                                                                                               |
+| _custom_         | ```typescript <ngx-title [type]="'custom'" [customText]="'Custom text!'"></ngx-title``` |                                                                                                                               |
 
 ## Installation
 
@@ -28,7 +34,7 @@ Install `ngx-title` from `npm`:
 ```
 
 Add package to NgModule imports:
-```
+```typescript
   import { NgxTitleModule } from "ngx-title";
   
   @NgModule({
@@ -39,7 +45,7 @@ Add package to NgModule imports:
 ```
 
 Add selected component to your page:
-```
+```html
   <ngx-title [type]="'sleepy'"></ngx-title>
 ```
 
@@ -58,13 +64,13 @@ First time:
   cd ngx-title
 ```
 
-make changes in lib and build (location `/ngx-title/projects/ngx-title`):
+Make changes in lib and build (location `/ngx-title/projects/ngx-title`):
 
 ```bash
   ng build ngx-title
 ```
 
-run workspace (location `/ngx-title`) app and see results:
+Run workspace (location `/ngx-title`) app and see results:
 
 ```bash
   npm run start
