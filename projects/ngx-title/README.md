@@ -1,24 +1,104 @@
-# NgxTitle
+<a href="https://github.com/matsta25/ngx-title">
+<div align="center">
+<img class="mx-auto center-block d-block" src="https://raw.githubusercontent.com/matsta25/ngx-title/main/ngx-title.png?sanitize=true" alt="ngx-title" width="200" height="200">
+</div>
+</a>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+<h1 align="center">ngx-title</h1>
 
-## Code scaffolding
+<p align="center">
+  <a href="https://www.codefactor.io/repository/github/matsta25/ngx-title"><img src="https://www.codefactor.io/repository/github/matsta25/ngx-title/badge" alt="CodeFactor" /></a>    
+  <a href="https://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT badge"/></a>
+</p>
 
-Run `ng generate component component-name --project ngx-title` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-title`.
-> Note: Don't forget to add `--project ngx-title` or else it will be added to the default project in your `angular.json` file. 
+**Ngx-title** is small library that can enhance your html title in Angular based web page when the browser tab is not active.
 
-## Build
+> If you are interested of contributing, go to [CONTRIBUTING](https://github.com/matsta25/ngx-title/blob/main/CONTRIBUTING.md) to make this project more awesome! :sunglasses:
 
-Run `ng build ngx-title` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Demo
 
-## Publishing
+Demo for _sleepy_ type:
 
-After building your library with `ng build ngx-title`, go to the dist folder `cd dist/ngx-title` and run `npm publish`.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/matsta25/ngx-title/main/sleepy.gif" width="490" height="43"  alt="demo"/> 
+</div>
 
-## Running unit tests
+## Installation
 
-Run `ng test ngx-title` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install `ngx-title` from `npm`:
 
-## Further help
+```bash
+  npm install ngx-title --save
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Add package to NgModule imports:
+```typescript
+  import { NgxTitleModule } from "ngx-title";
+  
+  @NgModule({
+    ...
+    imports: [NgxTitleModule,...]
+    ...
+  })
+```
+
+Add selected component to your page:
+```html
+  <ngx-title [type]="'sleepy'"></ngx-title>
+```
+
+## Docs
+
+All types:
+
+| type        | text                | usage                                                                                   |
+|-------------|---------------------|-----------------------------------------------------------------------------------------|
+| _sleepy_    | _(-,-)Zzzz..._      |```typescript <ngx-title [type]="'sleepy'"></ngx-title>```                             |
+| _come_back_ | _Come back!_        |```typescript <ngx-title [type]="'come_back'"></ngx-title>```                          |
+| _waiting_   | _Waiting..._        |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
+| _here_      | _HERE!_             |```typescript <ngx-title [type]="'waiting'"></ngx-title>```                            |
+| _custom_    | _Custom text!_      | ```typescript <ngx-title [type]="'custom'" [customText]="'Custom text!'"></ngx-title``` |      
+
+## Contributing
+
+Want to file a bug, contribute some code, or improve documentation? Excellent!
+
+Read up on guidelines for [CONTRIBUTING](https://github.com/matsta25/ngx-title/blob/main/CONTRIBUTING.md).
+
+## How to build lib for development
+
+First time:
+
+```bash
+  git clone git@github.com:matsta25/ngx-title.git
+  cd ngx-title
+```
+
+Make changes in lib and build (location `/ngx-title/projects/ngx-title`):
+
+```bash
+  ng build ngx-title
+```
+
+Run workspace (location `/ngx-title`) app and see results:
+
+```bash
+  npm run start
+```
+
+## Contributors
+
+This project exists thanks to all these people :muscle: :
+
+[//]: contributor-faces
+
+<a href="https://github.com/matsta25"><img src="https://avatars2.githubusercontent.com/u/32844571?v=4" title="matsta25" width="80" height="80"></a>
+
+## License
+
+Everything in this repository is [licensed under the MIT License][license] unless otherwise specified.
+
+Copyright (c) 2022 [Mateusz Stanczak]
+
+[license]: https://github.com/matsta25/ngx-title/blob/main/LICENSE
+[Mateusz Stanczak]: https://github.com/matsta25
